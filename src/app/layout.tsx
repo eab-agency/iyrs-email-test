@@ -4,9 +4,9 @@ import { type Metadata } from "next";
 import { GoogleTagManager } from "@next/third-parties/google";
 
 export const metadata: Metadata = {
-  title: "Troy University",
+  title: "Roanoke College",
   description:
-    "From award-winning academic opportunities to exciting Division I athletics events, Troy University provides students around the globe with top-notch learning opportunities—in class and online. For 19 consecutive years, TROY has been named to The Princeton Review’s “Best in the Southeast” list. It’s your time to lead.&#34;",
+    "Roanoke College is an independent, co-educational liberal arts college. Founded in 1842, it is the second-oldest Lutheran-related college in America. Discover why US News and World Report, The Princeton Review and Forbes Magazine consistently rank Roanoke as one of the top colleges and liberal arts programs in the nation.",
   icons: [{ rel: "icon", url: "/favicon.ico" }],
 };
 
