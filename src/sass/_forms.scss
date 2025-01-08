@@ -1,0 +1,222 @@
+
+// ===============================================
+// Forms
+
+/// =====================
+  /// 
+  %form-field {
+    width: 100%;
+    padding: 0.8em 0.5em;
+    background: #ffffff;
+    font-size: 1rem;
+    line-height: 1.1;
+    box-sizing: border-box;
+    border-radius: 0.2em;
+    border: 1px solid #fff;
+  
+    .type-telephone &,
+    .type-ssn &,
+    .type-date & {
+      width: auto;
+  
+      // Min widths fix a sizing bug on iOS
+      &[size="2"] {
+        min-width: 3.25em;
+      }
+  
+      &[size="3"] {
+        min-width: 4.25em;
+      }
+  
+      &[size="4"] {
+        min-width: 5.25em;
+      }
+  
+  
+    }
+  
+    // .error &,
+    // .val-flag & {
+    //   // border-color: config.$c-error;
+    // }
+  
+    &:focus,
+    &:hover {
+      outline: none;
+      @apply border border-solid border-secondary-blue-500;
+    }
+  }
+  
+  
+    .mauticform{
+      // @apply rounded-2xl p-fluid-md;
+      // background: #edebe5;
+  
+      &-row {
+        position: relative;
+        display: block;
+        margin: 0.8em 0;
+    
+        label {
+          display: block;
+          font-size: 0.85rem;
+          margin: 0;
+          // font-family: config.$f-bodyFont;
+        }
+    
+        input {
+          @extend %form-field;
+        }
+      }
+    
+      &-has-error {
+        input,
+        select {
+          @apply border border-red-600;
+          // border-color: config.$c-error;
+        }
+      }
+    
+      &-errormsg {
+        @apply text-red-600;
+        // color: config.$c-error;
+      }
+  
+      input[type="checkbox"]{
+        width: 1em;
+        height: 1em;
+        margin-left: 0;
+      }
+  
+      select{
+        min-height: 2.5rem;
+  
+        &:hover {
+          outline: none;
+          //   @apply border border-solid border-warm-grey;
+          // border-bottom: 2px solid config.$c-input-field-focus;
+        }
+        
+        &:focus{
+          
+        }
+
+      }
+    }
+  
+    .form-container{
+      h3{
+        margin-top: 0;
+      }
+    }
+  
+    .FormHide{
+      display: none;
+      visibility: hidden;
+    }
+  
+   
+
+  .mauticform-radiogrp-row{
+    display: flex;
+    margin-block: 0.5em;
+  
+    input[type="radio"]{
+      flex-shrink:1;
+      margin-right: 0.5em;
+      display: block;
+      width: 0;
+      height: 0;
+  
+      &:checked + label::before{
+        background: #000;
+      }
+  
+      &:focus + label::before{
+        box-shadow: 0 0 0 2px #dbcb7c;
+        border: 1px solid #000;
+      }
+    }
+  
+    label{
+      flex: 1;
+      padding-left: 1.5em;
+      display: block;
+      position: relative;
+      cursor: pointer;
+  
+      &::before{
+        content: "";
+        display: block;
+        width: 1.2em;
+        height: 1.2em;
+        border: 1px solid transparent;
+        border-radius: 50%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        background: #ffffff;
+      }
+    }
+  }
+
+  .mauticform-checkboxgrp-row{
+    display: flex;
+    margin-block: 1em;
+  
+    input[type="checkbox"]{
+      flex-shrink:1;
+      margin-right: 0;
+      display: block;
+      width: 0;
+      height: 0;
+  
+      &:checked + label::before{
+        // background: ;
+        @apply bg-secondary-blue-500;
+      }
+  
+      &:focus + label::before{
+        // box-shadow: 0 0 0 2px #dbcb7c;
+        // border: 1px solid #000;
+        @apply border border-solid border-primary-cardinal-500;
+      }
+    }
+  
+    label{
+      flex: 1;
+      padding-left: 1.5em;
+      display: block;
+      position: relative;
+      cursor: pointer;
+  
+      &::before{
+        content: "";
+        display: block;
+        width: 1.2em;
+        height: 1.2em;
+        border: 1px solid transparent;
+        border-radius: 0.2em;
+        position: absolute;
+        left: 0;
+        top: 0;
+        background: #ffffff;
+      }
+    }
+  }
+
+  .mauticform-button{
+    @apply bg-secondary-blue-500 text-white uppercase;
+  }
+
+  // .mauticform-row{
+  //   padding-bottom: 0.5em;
+  //   margin-block: 0.5em;
+  //   border-bottom: 1px solid rgba(0,0,0,0.1);
+
+  //   &:last-child{
+  //     padding-bottom: 0;
+  //     margin-bottom: 0;
+  //     border-bottom: none;
+  //   }
+  // }

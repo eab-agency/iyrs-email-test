@@ -1,0 +1,38 @@
+{
+  "partner": {
+    "name": "Roanoke College",
+    "description": "Roanoke College is an independent, co-educational liberal arts college. Founded in 1842, it is the second-oldest Lutheran-related college in America. Discover why US News and World Report, The Princeton Review and Forbes Magazine consistently rank Roanoke as one of the top colleges and liberal arts programs in the nation.",
+    "url": "https://www.troy.edu",
+    "acronym": "Roanoke College",
+    "helpEmail": "help@troy.edu",
+    "privacyPolicyUrl": "https://www.troy.edu/privacy-statement.html",
+    "phone": "1.800.414.5756",
+    "address": {
+      "street": "Roanoke College",
+      "city": "Troy",
+      "state": "AL",
+      "zip": "36082"
+    },
+    "branding": {
+      "logoHeader": "images/svg/troy-logo.svg",
+      "logoFooter": "images/svg/troy-logo.svg",
+      "logoAlt": "Roanoke College Logo",
+      "colors": {
+        "primary": {
+          "cardinal-500": "#910039",
+          "black": "#231F20",
+          "silver-500": "#999999"
+        },
+        "secondary":{
+          "cardinal-400": "#B50043",
+          "cardinal-600": "#73002E",
+          "silver-400":"#B1B3B3",
+          "silver-300":"#D9D9D6",
+          "silver-200":"#EDEDED",
+          "blue-500": "#416BB4"
+        }
+      }
+    },
+    "gtmId": "GTM-WH4W4BQG"
+  }
+}

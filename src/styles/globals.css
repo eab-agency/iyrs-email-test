@@ -1,9 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  
 }
 
 a {
@@ -13,4 +16,20 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+.primary-button{
+  /* background: turquoise; */
+
+  &:hover{
+    background: #890b97;
+  }
+}
+
+.image-card{
+  background: #f3f4f6;
+  border-radius: 36px;
+  margin: 1rem;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
