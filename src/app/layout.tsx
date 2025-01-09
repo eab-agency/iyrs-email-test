@@ -1,3 +1,4 @@
+import "@/styles/tailwind.css";
 import "@/styles/globals.css";
 
 import { type Metadata } from "next";
@@ -25,7 +26,6 @@ interface Partner {
   gtmId?: string;
 }
 
-// eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
 const { name, description, gtmId } = data.partner as Partner;
 
 export const metadata: Metadata = {

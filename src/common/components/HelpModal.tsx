@@ -1,6 +1,6 @@
 import React from "react";
 import data from "@/data/globalData.json";
-import { ModalContent } from "barebones";
+import { ModalContent } from "skeletix";
 
 interface GlobalData {
   partner: {

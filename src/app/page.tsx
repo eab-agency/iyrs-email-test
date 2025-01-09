@@ -9,7 +9,8 @@ import {
   StickyCta,
   PageHeader,
   PageFooter,
-} from "barebones";
+  Hero,
+} from "skeletix";
 import VideoModal from "@/common/components/VideoModal";
 import HelpModal from '@/common/components/HelpModal';
 // import { PageHeader } from "@/common/sections/PageHeader";
@@ -47,9 +48,9 @@ export default function Home() {
   return (
     <main className="bg-gray-200">
 
-      <PageHeader logoUrl={logoHeader} logoAlt={logoAlt}>
-        <nav>
-          <ul>
+      <PageHeader logoUrl={logoHeader} logoAlt={logoAlt} className="justify-between align-middle">
+        <nav className="w-fit">
+          <ul className="flex gap-fluid-2xl list-none">
             <li><Link href="#">Home</Link></li>
             <li>About</li>
             <li>Services</li>
@@ -58,19 +59,33 @@ export default function Home() {
         </nav>
       </PageHeader>
 
+      <Hero
+        title="Roanoke College"
+        content="Roanoke College is a community of passionate students, faculty, staff, and alumni dedicated to the pursuit of knowledge and the development of leadership skills."
+        imageUrl={AnnaGrace}
+        className="h-[50rem]"
+        // cta={<Button type="link" href="#about-roanoke" label="Learn More" />}
+        // imageUrl="https://source.unsplash.com/1600x900/?college"
+      />
+
+{/* classname?: string;
+    title?: React.ReactNode;
+    content?: string;
+    imageUrl?: string;
+    imageAlt?: string; */}
+
       <Container 
       htmlTag="section" 
-      width="wide"
+      width="full"
       alignItems="items-center"
       justifyContent="justify-center"
       className="flex mx-auto">
-        <h1 className="text-fluid-5xl">Roanoke College Paid Search</h1>
         
-        <Container id="about-roanoke" className="bg-white p-8 rounded-3xl shadow-lg">
+        <Container id="about-roanoke" className="card">
           <h2>About Roanoke</h2>
           <p>this is the form</p>
           <code>roanoke-college-e360.contact-server.com/form/generate.js?id=12</code>
-          <Button type="link" href="https://eab.com" newTab label="hello" className="bg-primary-silver-500 w-fit primary-button text-fluid-xl my-4">Click me</Button>
+          <Button type="link" href="https://eab.com" newTab label="hello" className="bg-secondary-blue-500 w-fit primary-button text-fluid-xl my-4">Click me</Button>
         </Container>
 
         <StatCard
@@ -85,15 +100,17 @@ export default function Home() {
           gradYear="2021"
           authorTitle="President"
         />
-
-        <Container layout="row" justifyContent="justify-around" width="wide">
-          <ImageCard image={AnnaGrace} title="The super title" content="this is the content for this image card." altText="the image">asdf
-          </ImageCard>
-          <ImageCard image={AnnaGrace} title="The super title" content="this is the content for this image card." altText="the image">asdf
-          </ImageCard>
-        </Container>
       </Container>
-      <ModalButton content={<VideoModal videoUrl="https://www.youtube.com/embed/2b_YGbfT4O4?si=Xq54a9qXREIm2CIE" />} className="video-button">Play me</ModalButton>
+
+      <Container htmlTag="section" layout="row" alignItems="items-center" justifyContent="justify-around" width="wide" className="mx-auto gap-4">
+          <ImageCard image={AnnaGrace} title="The super title" content="this is the content for this image card." altText="the image">
+          <ModalButton content={<VideoModal videoUrl="https://www.youtube.com/embed/2b_YGbfT4O4?si=Xq54a9qXREIm2CIE" />} className="video-button">Play me</ModalButton>
+          </ImageCard>
+          <ImageCard image={AnnaGrace} title="The super title" content="this is the content for this image card." altText="the image">asdf
+          </ImageCard>
+      </Container>
+
+      
       <StickyCta formId='about-roanoke'>
           Take the First Step! Connect with <strong>Roanoke College</strong>
       </StickyCta>

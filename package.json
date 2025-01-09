@@ -16,11 +16,11 @@
   "dependencies": {
     "@next/third-parties": "^15.0.2",
     "@t3-oss/env-nextjs": "^0.10.1",
-    "barebones": "file:.yalc/barebones",
     "next": "^15.0.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "sass": "^1.83.1",
+    "skeletix": "file:.yalc/skeletix",
     "zod": "^3.23.3"
   },
   "devDependencies": {
@@ -31,7 +31,7 @@
     "@typescript-eslint/eslint-plugin": "^8.1.0",
     "@typescript-eslint/parser": "^8.1.0",
     "autoprefixer": "^10.4.20",
-    "barestyles": "^0.0.141",
+    "barestyles": "file:.yalc/barestyles",
     "eslint": "^8.57.0",
     "eslint-config-next": "^15.0.1",
     "postcss": "^8.4.49",

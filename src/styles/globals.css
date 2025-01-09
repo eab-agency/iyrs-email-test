@@ -1,7 +1,3 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 html,
 body {
   padding: 0;
@@ -9,14 +5,14 @@ body {
   
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
 * {
   box-sizing: border-box;
 }
+
+section{
+  padding: clamp(2rem, 5vw, 4rem);
+}
+
 
 .primary-button{
   /* background: turquoise; */
@@ -26,10 +22,61 @@ a {
   }
 }
 
-.image-card{
+/* h1, h2, h3, h4{
+  font-family: var(--font-roboto-slab);
+} */
+
+/* .image-card{
   background: #f3f4f6;
   border-radius: 36px;
   margin: 1rem;
   overflow: hidden;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+} */
+
+/* -------------------------------------------- */
+
+.close-modal {
+  display: block;
+  position: absolute;
+  top: -2em;
+  right: 0;
+  text-indent: -999em;
+  background: none;
+  border: 0;
+  width: 2em;
+  height: 2em;
+  padding: 0;
+  cursor: pointer;
+  transition: all 0.2s ease-in;
+
+  &::before,
+  &::after {
+    content: "";
+    background: white;
+    display: block;
+    width: 1.5em;
+    height: 0.3em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &::before {
+    transform: translate(-50%, -50%) rotate(45deg) scale(0.8);
+  }
+
+  &::after {
+    transform: translate(-50%, -50%) rotate(-45deg) scale(0.8);
+  }
+
+  &:hover,
+  &:focus {
+    outline: none;
+    &::before,
+    &::after {
+      @apply bg-white;
+    }
+  }
 }
