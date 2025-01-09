@@ -14,29 +14,28 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@next/third-parties": "^15.0.2",
-    "@t3-oss/env-nextjs": "^0.10.1",
-    "next": "^15.0.1",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
+    "@next/third-parties": "^15.1.4",
+    "@t3-oss/env-nextjs": "^0.11.1",
+    "barestyles": "^0.1.3",
+    "next": "^15.1.4",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
     "sass": "^1.83.1",
-    "skeletix": "file:.yalc/skeletix",
-    "zod": "^3.23.3"
+    "zod": "^3.24.1"
   },
   "devDependencies": {
-    "@types/eslint": "^8.56.10",
-    "@types/node": "^20.14.10",
-    "@types/react": "^18.3.3",
-    "@types/react-dom": "^18.3.0",
-    "@typescript-eslint/eslint-plugin": "^8.1.0",
-    "@typescript-eslint/parser": "^8.1.0",
+    "@types/eslint": "^9.6.1",
+    "@types/node": "^22.10.5",
+    "@types/react": "^19.0.4",
+    "@types/react-dom": "^19.0.2",
+    "@typescript-eslint/eslint-plugin": "^8.19.1",
+    "@typescript-eslint/parser": "^8.19.1",
     "autoprefixer": "^10.4.20",
-    "barestyles": "file:.yalc/barestyles",
-    "eslint": "^8.57.0",
-    "eslint-config-next": "^15.0.1",
+    "eslint": "^9.17.0",
+    "eslint-config-next": "^15.1.4",
     "postcss": "^8.4.49",
     "tailwindcss": "^3.4.17",
-    "typescript": "^5.5.3"
+    "typescript": "^5.7.3"
   },
   "ct3aMetadata": {
     "initVersion": "7.38.0"

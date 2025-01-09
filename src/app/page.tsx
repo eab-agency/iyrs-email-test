@@ -13,12 +13,12 @@ import {
 } from "skeletix";
 import VideoModal from "@/common/components/VideoModal";
 import HelpModal from '@/common/components/HelpModal';
-// import { PageHeader } from "@/common/sections/PageHeader";
+import PrivacyModal from "@/common/components/PrivacyModal";
 
 import data from "@/data/globalData.json";
 
+import heroImage from "@/assets/roanoke-hero.jpg";
 import AnnaGrace from "@/assets/anna-grace.png";
-import PrivacyModal from "@/common/components/PrivacyModal";
 
 interface GlobalData {
   partner: {
@@ -48,31 +48,19 @@ export default function Home() {
   return (
     <main className="bg-gray-200">
 
-      <PageHeader logoUrl={logoHeader} logoAlt={logoAlt} className="justify-between align-middle">
-        <nav className="w-fit">
-          <ul className="flex gap-fluid-2xl list-none">
-            <li><Link href="#">Home</Link></li>
-            <li>About</li>
-            <li>Services</li>
-            <li>Resources</li>
-          </ul>
-        </nav>
-      </PageHeader>
+      <PageHeader logoUrl={logoHeader} logoAlt={logoAlt} className="bg-white" logoWidth="w-fluid-6xl" logoHeight="h-fluid-2xl" />
 
       <Hero
         title="Roanoke College"
         content="Roanoke College is a community of passionate students, faculty, staff, and alumni dedicated to the pursuit of knowledge and the development of leadership skills."
-        imageUrl={AnnaGrace}
-        className="h-[50rem]"
+        imageUrl={heroImage}
+        className="bg-primary-red py-fluid-5xl"
         // cta={<Button type="link" href="#about-roanoke" label="Learn More" />}
-        // imageUrl="https://source.unsplash.com/1600x900/?college"
       />
 
-{/* classname?: string;
-    title?: React.ReactNode;
-    content?: string;
-    imageUrl?: string;
-    imageAlt?: string; */}
+      <div className="mx-auto my-fluid-2xl highlight">
+        hello world
+      </div>
 
       <Container 
       htmlTag="section" 
@@ -85,7 +73,7 @@ export default function Home() {
           <h2>About Roanoke</h2>
           <p>this is the form</p>
           <code>roanoke-college-e360.contact-server.com/form/generate.js?id=12</code>
-          <Button type="link" href="https://eab.com" newTab label="hello" className="bg-secondary-blue-500 w-fit primary-button text-fluid-xl my-4">Click me</Button>
+          <Button type="link" href="https://eab.com" newTab className="bg-secondary-blue-500 w-fit primary-button text-fluid-xl my-4">Click me</Button>
         </Container>
 
         <StatCard
@@ -97,7 +85,7 @@ export default function Home() {
         <BlockQuote
           quote="Roanoke College is a community of passionate students, faculty, staff, and alumni dedicated to the pursuit of knowledge and the development of leadership skills."
           author="Roanoke College"
-          gradYear="2021"
+          gradYear={2021}
           authorTitle="President"
         />
       </Container>
