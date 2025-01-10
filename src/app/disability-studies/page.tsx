@@ -16,10 +16,9 @@ import { FormModal } from "@/common/components/FormModal";
 import data from "@/data/globalData.json";
 
 import heroImage from "@/assets/roanoke-hero.jpg";
-import AbbyMccusker from "@/assets/abby-mccusker.jpg";
-import AcademicsImage from "@/assets/academics.jpg";
-import StudentLifeImage from "@/assets/student-life.jpg";
 import VideoThumbnail from "@/assets/roanoke-video-thumbnail.jpg";
+import disabilityStudiesImage from "@/assets/disability-studies.jpg";
+import roanokeCampusImage from "@/assets/roanoke-campus.jpg";
 
 import Image from "next/image";
 
@@ -81,16 +80,17 @@ export default function Home() {
           <BlockQuote
             quote="It's been incredible to work with the professors in the disability studies concentration. They&apos;ve given me so many new perspectives about life and advocating for people with disabilities. They&apos;ve also given me a lot of opportunities for field experience."
             author="Hope Keller"
-            image={AbbyMccusker}
-            imageAlt="Abby McCusker Portrait"
+            // image={AbbyMccusker}
+            // imageAlt="Abby McCusker Portrait"
             // gradYear={21}
             authorTitle="health and exercise science major with a concentration in disability studies, president of the Toy Like Me student club"
+            className="max-w-narrow mx-auto"
           />
         </Container>
 
         <Container htmlTag="section" className="bg-primary-red text-white scholarships">
-          <Container width="narrow" className="mx-auto">
-          <h2 className="text-3xl text-primary-yellow uppercase font-normal text-center scholarchips-wrapper">Through scholarships and grants, we are committed to helping you make your bachelor&apos;s degree a reality at Roanoke.</h2>
+          <Container width="narrow" className="mx-auto scholarchips-wrapper">
+          <h2 className="text-3xl text-primary-yellow uppercase font-normal text-center">Through scholarships and grants, we are committed to helping you make your bachelor&apos;s degree a reality at Roanoke.</h2>
           <p className="text-center">Our Financial Aid Office can help you tap into opportunities such as:</p>
           <ul>
             <li><strong>The Virginia Tuition Assistance Grant Program</strong> for Virginia residents who attend accredited private, nonprofit colleges in Virginia.</li>
@@ -111,11 +111,11 @@ export default function Home() {
 
       <Container htmlTag="section" justifyContent="justify-around" className="mx-auto bg-white edu-info">
         <Container width="wide" className="mx-auto wrapper">
-          <Container className="edu-info__content">
+          <Container className="edu-info__content mq-900:w-1/2">
             <h3>Get Real-World Experience</h3>
             <figure>
               <Image 
-                src={AcademicsImage} 
+                src={disabilityStudiesImage} 
                 alt="Academics"
                 width="600"
                 height="250"
@@ -126,11 +126,11 @@ export default function Home() {
 
             <p>Through our immersive May Term course or service learning opportunities with innovative programs like MAPLE&apos;S Kids and Toy Like Me at Roanoke College, you&apos;ll get valuable real-world experience that empowers you to advocate for positive change in inclusive and accessible ways.</p>
           </Container>
-          <Container className="edu-info__content">
+          <Container className="edu-info__content mq-900:w-1/2">
             <h3>Study in the Beautiful Roanoke Valley</h3>
             <figure>
               <Image 
-                src={StudentLifeImage} 
+                src={roanokeCampusImage} 
                 alt="Student Life"
                 width="600"
                 height="250"
@@ -144,9 +144,11 @@ export default function Home() {
       </Container>
 
       <Container htmlTag="section" className="bg-primary-red text-white dates">
+      <Container width="wide" className="wrapper mx-auto">
         <h2>Important upcoming dates and deadlines</h2>
         <p>Winter Priority Deadline: <strong>January 15</strong></p>
         <p>Regular Decision (Fall 2025): <strong>March 15</strong></p>
+      </Container>
       </Container>
 
       <Container htmlTag="section" className="bg-white lets-go">
