@@ -219,7 +219,7 @@ main{
     top: 0;
     left: 50%;
     transform: translateX(-50%);
-    background: url('@/assets/scholarships-bg.jpg') no-repeat center;
+    background: url('../assets/scholarships-bg.jpg') no-repeat center;
     background-size: cover;
     background-blend-mode: darken;
     z-index: 0;
@@ -378,7 +378,7 @@ main{
     top: 0;
     left: 50%;
     transform: translateX(-50%);
-    background: url('@/assets/dates-bg.jpg') no-repeat center;
+    background: url('../assets/dates-bg.jpg') no-repeat center;
     background-size: cover;
     background-blend-mode: darken;
     z-index: 0;
