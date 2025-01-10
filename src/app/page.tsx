@@ -147,7 +147,6 @@ export default function Home() {
       <Container htmlTag="section" className="bg-primary-red text-white dates">
         <Container width="wide" className="wrapper mx-auto">
           <h2>Important upcoming dates and deadlines</h2>
-          <p>Winter Priority Deadline: <strong>January 15</strong></p>
           <p>Regular Decision (Fall 2025): <strong>March 15</strong></p>
         </Container>
       </Container>

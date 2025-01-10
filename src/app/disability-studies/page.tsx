@@ -59,7 +59,7 @@ export default function Home() {
       >
         <Container width="wide" className="mx-auto flex flex-col items-center gap-fluid-xl mq-900:flex-row wrapper">
           <div className="w-full mq-900:w-3/5">
-            <h2 className="text-fluid-lg font-normal">Make an Impact with a Disability Studies DegreeMake an Impact with a Disability Studies Degree</h2>
+            <h2 className="text-fluid-lg font-normal">Make an Impact with a Disability Studies Degree</h2>
 
             <p>At Roanoke College, disability studies isn&apos;t just a program — it&apos;s a call to action. By pushing beyond the surface level, we work to fundamentally change how we understand and engage with the full range of human experiences.</p>
             
@@ -146,7 +146,6 @@ export default function Home() {
       <Container htmlTag="section" className="bg-primary-red text-white dates">
       <Container width="wide" className="wrapper mx-auto">
         <h2>Important upcoming dates and deadlines</h2>
-        <p>Winter Priority Deadline: <strong>January 15</strong></p>
         <p>Regular Decision (Fall 2025): <strong>March 15</strong></p>
       </Container>
       </Container>
