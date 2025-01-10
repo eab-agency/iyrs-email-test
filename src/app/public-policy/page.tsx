@@ -62,9 +62,9 @@ export default function Home() {
           <div className="w-full mq-900:w-3/5">
             <h2 className="text-fluid-lg font-normal">Lead Change in Your Community with a Public Policy Degree</h2>
 
-            <p>A degree in public policy gives you the power to make a real difference in the world and improve how communities work. Whether you're interested in creating new solutions to address social and environmental challenges, driving change in the private sector, or conducting important research on Capitol Hill, the career possibilities are endless.</p>
+            <p>A degree in public policy gives you the power to make a real difference in the world and improve how communities work. Whether you&apos;re interested in creating new solutions to address social and environmental challenges, driving change in the private sector, or conducting important research on Capitol Hill, the career possibilities are endless.</p>
             
-            <p>At Roanoke, our public policy program offers a unique, hands-on approach. You'll learn from a strong curriculum that combines classroom learning with real-world experience, preparing you for a successful career path. You'll learn how to assess societal issues, analyze data, and propose powerful solutions.</p>
+            <p>At Roanoke, our public policy program offers a unique, hands-on approach. You&apos;ll learn from a strong curriculum that combines classroom learning with real-world experience, preparing you for a successful career path. You&apos;ll learn how to assess societal issues, analyze data, and propose powerful solutions.</p>
 
             <p>When you graduate, you&apos;ll understand the intricacies and impact of policymaking—and be ready to lead the way as a changemaker.</p>
             
