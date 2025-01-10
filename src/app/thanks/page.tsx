@@ -3,6 +3,7 @@ import {
   PageHeader,
   PageFooter,
   Hero,
+  Button
 } from "skeletix";
 import HelpModal from '@/common/components/HelpModal';
 import PrivacyModal from "@/common/components/PrivacyModal";
@@ -96,6 +97,11 @@ export default function Home() {
             <p>Plus, you won&apos;t find a view that compares to this. Situated along the scenic Blue Ridge Mountains, Roanoke College is <strong>just 10 miles from the Blue Ridge Parkway and the Appalachian Trail,</strong> and we were ranked among the <strong>Top 20 Most Beautiful Campuses</strong> in 2012.</p>
           </Container>
           </Container>
+      </Container>
+
+      <Container className="bg-white px-fluid-lg py-fluid-2xl">
+        <h2 className="text-fluid-xl text-center uppercase font-normal">Discover all that Roanoke has to offer!</h2>
+        <Button type="link" href="https://www.roanoke.edu/about/10_reasons_to_choose_roanoke" newTab className=" border-primary-red border-2 border-solid w-fit mx-auto">Check out <strong>10 Reasons to Choose Roanoke College.</strong></Button>
       </Container>
 
       <Container htmlTag="section" className="bg-primary-red text-white dates">
