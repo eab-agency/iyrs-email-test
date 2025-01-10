@@ -23,9 +23,9 @@ const config: Config = {
         ...branding?.colors,
       },
       fontFamily: {
-        sans: ['var(--font-roboto)', 'Roboto', 'sans-serif'],
-        serif: ['var(--font-roboto-slab)', 'Roboto Slab', 'serif'],
-        h1: ['var(--font-roboto-slab)', 'Roboto Slab', 'serif'],
+        sans1: ['henderson-sans-basic', 'sans-serif'],
+        sans2: ['mr-eaves-modern', 'sans-serif'],
+        serif: ['Roboto Slab', 'serif'],
       },
     },
   },

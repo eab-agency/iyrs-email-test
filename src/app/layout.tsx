@@ -5,20 +5,6 @@ import { type Metadata } from "next";
 import { GoogleTagManager } from "@next/third-parties/google";
 import data from "@/data/globalData.json";
 
-import { Roboto, Roboto_Slab } from "next/font/google";
-
-const roboto = Roboto({
-  weight: ["400", "700", "900"],
-  display: "swap",
-  variable: "--font-roboto",
-  subsets: ["latin"],
-});
-const robotoSlab = Roboto_Slab({
-  weight: ["300", "400", "800"],
-  display: "swap",
-  variable: "--font-roboto-slab",
-  subsets: ["latin"],
-});
 
 interface Partner {
   name: string;
@@ -39,13 +25,10 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en" className={`${roboto.variable} ${robotoSlab.variable}`}>
+    <html lang="en">
       <head>
-        <link rel="preconnect" href="https://use.typekit.net" />
-        <link
-          rel="stylesheet"
-          href="https://use.typekit.net/rnp7shh.css"
-        ></link>
+      <link rel="preconnect" href="https://use.typekit.net" />
+      <link rel="stylesheet" href="https://use.typekit.net/mdm0bxw.css" />
       </head>
       {typeof gtmId === "string" && <GoogleTagManager gtmId={gtmId} />}
       <body>{children}</body>
