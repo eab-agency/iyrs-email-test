@@ -46,3 +46,10 @@ yarn-error.log*
 .idea
 # Local Netlify folder
 .netlify
+
+#yalc
+.yalc
+yalc.lock
+
+#.vscode
+.vscode

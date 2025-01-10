@@ -1,0 +1,33 @@
+{
+  "partner": {
+    "name": "Roanoke College",
+    "description": "Roanoke College is an independent, co-educational liberal arts college. Founded in 1842, it is the second-oldest Lutheran-related college in America. Discover why US News and World Report, The Princeton Review and Forbes Magazine consistently rank Roanoke as one of the top colleges and liberal arts programs in the nation.",
+    "url": "https://www.roanoke.edu",
+    "acronym": "Roanoke College",
+    "helpEmail": "admissions@roanoke.edu",
+    "privacyPolicyUrl": "https://www.roanoke.edu/web_policies",
+    "phone": "1.800.414.5756",
+    "address": {
+      "street": "221 College Lane",
+      "city": "Salem",
+      "state": "VA",
+      "zip": "24153"
+    },
+    "branding": {
+      "logoHeader": "images/svg/roanoke-logo.svg",
+      "logoFooter": "images/svg/roanoke-logo-white.svg",
+      "logoAlt": "Roanoke College Logo",
+      "colors": {
+        "primary": {
+          "red": "#872046",
+          "yellow": "#F0B52B",
+          "gray": "#5A6675"
+        },
+        "secondary":{
+          "beige": "#F7E8DF"
+        }
+      }
+    },
+    "gtmId": "GTM-WH4W4BQG"
+  }
+}

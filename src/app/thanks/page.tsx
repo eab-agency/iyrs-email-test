@@ -60,15 +60,13 @@ export default function Home() {
       >
         <Container width="wide" className="mx-auto flex flex-col items-center gap-fluid-xl mq-900:flex-row wrapper">
           <div className="w-full mq-900:w-3/5">
-            <h2 className="text-fluid-lg font-normal">Looking At Colleges And Universities in Virginia? See What Roanoke Offers:</h2>
-            
-            <ul>
-              <li>An innovative curriculum that sharpens your critical thinking, teaches scientific methods and broadens your worldview while <strong>preparing you to help tackle today&apos;s global challenges</strong></li>
-              <li>Guaranteed real-world learning experiences, <strong>including internships, research, or study abroad options</strong> at more than 300 schools on six continents</li>
-              <li>Consistent <strong>rankings as one of the top colleges and liberal arts programs in the nation</strong> by U.S. News & World Report, The Princeton Review and Forbes</li>
-            </ul>
+            <h2 className="text-fluid-lg font-normal">Develop Your Creative Voice in Screen Studies at Roanoke</h2>
 
-            <p>Roanoke College is much more than a place to start a career—it&apos;s a place to learn where you fit in the world and design a life with meaning and purpose. Join us!</p>
+            <p>Make your vision a reality. Our screen studies major will prepare you for a variety of career paths in the film and content creation industries, including cinema, arts, education, and marketing.</p>
+            
+            <p>What will you learn as a screen studies major? Our screen studies program is focused not only on filmmaking but also on digital production and broad media foundations. You’ll be equipped with the skill set to succeed across various storytelling mediums, and you’ll learn from knowledgeable industry professionals who will mentor you throughout your studies.</p>
+
+            <p>With a screen studies degree from Roanoke, you’ll gain incomparable professional experience and graduate ready to show the world your distinct, creative vision.</p>
             
           </div>
           <div id="lead-form" className="w-full mq-900:w-2/5 bg-primary-red p-fluid-lg">
@@ -81,16 +79,18 @@ export default function Home() {
 
       <Container htmlTag="section" className="p-0 bg-[#EEEFF1]">
           <BlockQuote
-            quote="I wanted a small school where I could have personal relationships with and extra support from my professors. Here at Roanoke, it makes all of those connections effortless."
-            author="Abby McCusker"
+            quote="I felt super supported by my professors and by the community at Roanoke, and I felt very confident and able to try and fail at things, which I think is a comfort I haven’t had in anything I’ve done since."
+            author="Omari Chancellor"
             image={AbbyMccusker}
             imageAlt="Abby McCusker Portrait"
+            gradYear={17}
+            // authorTitle="B.A. in Political Science"
           />
         </Container>
 
         <Container htmlTag="section" className="bg-primary-red text-white scholarships">
           <Container width="narrow" className="mx-auto">
-          <h2 className="text-3xl text-primary-yellow uppercase font-normal text-center scholarchips-wrapper">Through scholarships and grants, we are committed to helping you make your bachelor’s degree a reality at Roanoke.</h2>
+          <h2 className="text-3xl text-primary-yellow uppercase font-normal text-center scholarchips-wrapper">Through scholarships and grants, we are committed to helping you make your bachelor&apos;s degree a reality at Roanoke.</h2>
           <p className="text-center">Our Financial Aid Office can help you tap into opportunities such as:</p>
           <ul>
             <li><strong>The Virginia Tuition Assistance Grant Program</strong> for Virginia residents who attend accredited private, nonprofit colleges in Virginia.</li>
@@ -103,16 +103,16 @@ export default function Home() {
       <Container htmlTag="section" width="full" className="bg-secondary-beige stats">
         <h2 className="title"><span>REASONS TO CHOOSE ROANOKE</span></h2>
         <Container width="wide" className="mx-auto w-full gap-4 z-10 stats-list">
-          <StatCard statData={{line2:'18'}} statDescriptor="average class size"  />
-          <StatCard statData={{line2:'100+'}} statDescriptor="areas of study" />
-          <StatCard statData={{line2:'140+'}} statDescriptor="student clubs, teams, and organizations"  />
+          <StatCard statData={{line2:'228'}} statDescriptor="Members in the Roanoke College Film Club"  />
+          <StatCard statData={{line2:'95%'}} statDescriptor="of faculty hold the highest degree possible in their field" />
+          <StatCard statData={{line2:'Top 9%'}} statDescriptor="The Princeton Review&apos;s Best Colleges"  />
         </Container>
       </Container>
 
       <Container htmlTag="section" justifyContent="justify-around" className="mx-auto bg-white edu-info">
         <Container width="wide" className="mx-auto wrapper">
           <Container className="edu-info__content">
-            <h3>Academics</h3>
+            <h3>Break Into the Film Industry with Hands-On Experience</h3>
             <figure>
               <Image 
                 src={AcademicsImage} 
@@ -121,12 +121,12 @@ export default function Home() {
                 height="250"
               />
             </figure>
-            <p>Explore your interests with more than 100 areas of study <strong>including business, computer science, public policy, neuroscience, and screen studies.</strong> Our liberal arts focus means you&apos;ll be able to discover your path to success, even if you&apos;re undecided on your major right now.</p>
+            <p>Our screen studies graduates have gone on to find success across  media formats, such as working a popular TV show or starring in a movie alongside Zac Efron. The secret to these students’ success isn’t much a secret at all—at Roanoke College, <strong>hands-on learning is guaranteed.</strong></p>
 
-            <p>Internships, research, creative projects, service learning, and study abroad will <strong>help you build your personal resume with real-world experience</strong> that sets you apart.</p>
+            <p>Screen studies majors will learn from experienced professors who understand the film industry, and they will gain access to a range of opportunities to write, act, direct, edit, and produce in collaborative, real-world settings. These experiences will lay the foundation for a promising career no matter where their creative endeavors lead.</p>
           </Container>
           <Container className="edu-info__content">
-            <h3>Student Life</h3>
+            <h3>Study In the Beautiful Roanoke Valley</h3>
             <figure>
               <Image 
                 src={StudentLifeImage} 
@@ -135,11 +135,9 @@ export default function Home() {
                 height="250"
               />
             </figure>
-            <p><strong>Getting involved at Roanoke is easy—there are so many things to do!</strong></p>
+            <p>Roanoke College students don&apos;t have to travel the world to access world-class adventures or meaningful connections. Our region is ecologically unique and rich with outdoor activities that are second to none. The Roanoke Valley community is diverse and welcoming.</p>
 
-            <p>We offer a world-class fitness center and an Outdoor Adventures program to help you stay active. Plus, there are 23 NCAA Division III teams at Roanoke and <strong>the Blue Ridge Mountains are our backyard.</strong></p>
-
-            <p>There are also more than 140 clubs and organizations in everything from anime to bass fishing to college entrepreneurs. Whatever you&apos;re passionate about, there&apos;s a community here for you!</p>
+            <p>Plus, you won&apos;t find a view that compares to this. Situated along the scenic Blue Ridge Mountains, Roanoke College is <strong>just 10 miles from the Blue Ridge Parkway and the Appalachian Trail,</strong> and we were ranked among the <strong>Top 20 Most Beautiful Campuses</strong> in 2012.</p>
           </Container>
           </Container>
       </Container>

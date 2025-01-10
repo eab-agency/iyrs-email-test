@@ -1,12 +1,23 @@
-import "~/styles/globals.css";
+import "@/styles/tailwind.css";
+import "@/styles/globals.css";
 
 import { type Metadata } from "next";
 import { GoogleTagManager } from "@next/third-parties/google";
+import data from "@/data/globalData.json";
+
+
+interface Partner {
+  name: string;
+  description?: string;
+  gtmId?: string;
+}
+
+const { name, description, gtmId } = data.partner as Partner;
 
 export const metadata: Metadata = {
-  title: "Roanoke College",
+  title: name,
   description:
-    "Roanoke College is an independent, co-educational liberal arts college. Founded in 1842, it is the second-oldest Lutheran-related college in America. Discover why US News and World Report, The Princeton Review and Forbes Magazine consistently rank Roanoke as one of the top colleges and liberal arts programs in the nation.",
+    typeof description === "string" ? description : "Default description",
   icons: [{ rel: "icon", url: "/favicon.ico" }],
 };
 
@@ -15,7 +26,11 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
-      <GoogleTagManager gtmId="GTM-XYZ" />
+      <head>
+      <link rel="preconnect" href="https://use.typekit.net" />
+      <link rel="stylesheet" href="https://use.typekit.net/mdm0bxw.css" />
+      </head>
+      {typeof gtmId === "string" && <GoogleTagManager gtmId={gtmId} />}
       <body>{children}</body>
     </html>
   );

@@ -1,0 +1,67 @@
+// // Grid
+// @use "sass:color";
+// @use "@/styles/config/breakpoints";
+
+// @mixin generate-columns($total-columns: 12) {
+//     // Generate column classes
+//     @for $i from 0 through $total-columns {
+//         .col-#{$i} {
+//             @media (min-width: breakpoints.$mq-700) {
+//                 width: (100% / $total-columns) * $i;
+//             }
+//         }
+
+//         // Generate half-column classes if $i > 0
+//         @if $i > 0 {
+//             .col-#{$i}-5 {
+//                 @media (min-width: breakpoints.$mq-700) {
+//                     width: ((100% / $total-columns) * $i) + ((100% / $total-columns) / 2);
+//                 }
+//             }
+//         }
+//     }
+// }
+
+// // Utility class for columns grid container
+// :where(.cols) {
+//     display: flex;
+//     gap: 1rem;
+
+//     @include generate-columns();
+
+//     @media (max-width: breakpoints.$mq-700) {
+//         flex-wrap: wrap;
+//     }
+
+//     .col-50 {
+//         width: 50%;
+//     }
+// }
+
+// :where(.space-between) {
+//     justify-content: space-between;
+// }
+
+// :where(.space-around) {
+//     justify-content: space-around;
+// }
+
+// :where(.space-evenly) {
+//     justify-content: space-evenly;
+// }
+
+// :where(.align-center) {
+//     align-items: center;
+// }
+
+// :where(.align-start) {
+//     align-items: flex-start;
+// }
+
+// :where(.justify-center) {
+//     justify-content: center;
+// }
+
+// .no-gap {
+//     gap: 0;
+// }
