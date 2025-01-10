@@ -63,15 +63,13 @@ export default function Home() {
       >
         <Container width="wide" className="mx-auto flex flex-col items-center gap-fluid-xl mq-900:flex-row wrapper">
           <div className="w-full mq-900:w-3/5">
-            <h2 className="text-fluid-lg font-normal">Looking At Colleges And Universities in Virginia? See What Roanoke Offers:</h2>
-            
-            <ul>
-              <li>An innovative curriculum that sharpens your critical thinking, teaches scientific methods and broadens your worldview while <strong>preparing you to help tackle today&apos;s global challenges</strong></li>
-              <li>Guaranteed real-world learning experiences, <strong>including internships, research, or study abroad options</strong> at more than 300 schools on six continents</li>
-              <li>Consistent <strong>rankings as one of the top colleges and liberal arts programs in the nation</strong> by U.S. News & World Report, The Princeton Review and Forbes</li>
-            </ul>
+            <h2 className="text-fluid-lg font-normal">Lead Change in Your Community with a Public Policy Degree</h2>
 
-            <p>Roanoke College is much more than a place to start a career—it&apos;s a place to learn where you fit in the world and design a life with meaning and purpose. Join us!</p>
+            <p>A degree in public policy gives you the power to make a real difference in the world and improve how communities work. Whether you're interested in creating new solutions to address social and environmental challenges, driving change in the private sector, or conducting important research on Capitol Hill, the career possibilities are endless.</p>
+            
+            <p>At Roanoke, our public policy program offers a unique, hands-on approach. You'll learn from a strong curriculum that combines classroom learning with real-world experience, preparing you for a successful career path. You'll learn how to assess societal issues, analyze data, and propose powerful solutions.</p>
+
+            <p>When you graduate, you&apos;ll understand the intricacies and impact of policymaking—and be ready to lead the way as a changemaker.</p>
             
           </div>
           <div id="lead-form" className="w-full mq-900:w-2/5 bg-primary-red p-fluid-lg">
@@ -84,16 +82,18 @@ export default function Home() {
 
       <Container htmlTag="section" className="p-0 bg-[#EEEFF1]">
           <BlockQuote
-            quote="I wanted a small school where I could have personal relationships with and extra support from my professors. Here at Roanoke, it makes all of those connections effortless."
-            author="Abby McCusker"
+            quote="Roanoke College overall is always able to prepare you for anything. I&apos;m very confident that I have a really good background going into grad school."
+            author="Casey Wilson"
             image={AbbyMccusker}
             imageAlt="Abby McCusker Portrait"
+            gradYear={21}
+            authorTitle="B.A. in Political Science"
           />
         </Container>
 
         <Container htmlTag="section" className="bg-primary-red text-white scholarships">
           <Container width="narrow" className="mx-auto">
-          <h2 className="text-3xl text-primary-yellow uppercase font-normal text-center scholarchips-wrapper">Through scholarships and grants, we are committed to helping you make your bachelor’s degree a reality at Roanoke.</h2>
+          <h2 className="text-3xl text-primary-yellow uppercase font-normal text-center scholarchips-wrapper">Through scholarships and grants, we are committed to helping you make your bachelor&apos;s degree a reality at Roanoke.</h2>
           <p className="text-center">Our Financial Aid Office can help you tap into opportunities such as:</p>
           <ul>
             <li><strong>The Virginia Tuition Assistance Grant Program</strong> for Virginia residents who attend accredited private, nonprofit colleges in Virginia.</li>
@@ -106,16 +106,16 @@ export default function Home() {
       <Container htmlTag="section" width="full" className="bg-secondary-beige stats">
         <h2 className="title"><span>REASONS TO CHOOSE ROANOKE</span></h2>
         <Container width="wide" className="mx-auto w-full gap-4 z-10 stats-list">
-          <StatCard statData={{line2:'18'}} statDescriptor="average class size"  />
-          <StatCard statData={{line2:'100+'}} statDescriptor="areas of study" />
-          <StatCard statData={{line2:'140+'}} statDescriptor="student clubs, teams, and organizations"  />
+          <StatCard statData={{line2:'TOP 7%'}} statDescriptor="of colleges with academic credentials to offer a Phi Beta Kappa honor society chapter"  />
+          <StatCard statData={{line2:'95%'}} statDescriptor="of faculty hold the highest degree possible in their field" />
+          <StatCard statData={{line2:'Top 9%'}} statDescriptor="The Princeton Review&apos;s Best Colleges"  />
         </Container>
       </Container>
 
       <Container htmlTag="section" justifyContent="justify-around" className="mx-auto bg-white edu-info">
         <Container width="wide" className="mx-auto wrapper">
           <Container className="edu-info__content">
-            <h3>Academics</h3>
+            <h3>Get Real-World Professional Experience</h3>
             <figure>
               <Image 
                 src={AcademicsImage} 
@@ -124,12 +124,12 @@ export default function Home() {
                 height="250"
               />
             </figure>
-            <p>Explore your interests with more than 100 areas of study <strong>including business, computer science, public policy, neuroscience, and screen studies.</strong> Our liberal arts focus means you&apos;ll be able to discover your path to success, even if you&apos;re undecided on your major right now.</p>
+            <p>As a public policy student, you can take advantage of Roanoke&apos;s Washington Semester program for a distinctive, hands-on learning opportunity. The program offers students a life-changing opportunity to live and work in the Washington D.C. Students get invaluable experience interning for Capitol Hill, national museums, think tanks, and nonprofits. Or partner with local government and organizations during your coursework—there are plenty of opportunities for professional learning and skill-building.</p>
 
-            <p>Internships, research, creative projects, service learning, and study abroad will <strong>help you build your personal resume with real-world experience</strong> that sets you apart.</p>
+            <p>At Roanoke, real-world learning experiences are guaranteed, including internships, research, or study abroad options at <strong>more than 300 schools on six continents.</strong></p>
           </Container>
           <Container className="edu-info__content">
-            <h3>Student Life</h3>
+            <h3>Study In the Beautiful Roanoke Valley</h3>
             <figure>
               <Image 
                 src={StudentLifeImage} 
@@ -138,11 +138,9 @@ export default function Home() {
                 height="250"
               />
             </figure>
-            <p><strong>Getting involved at Roanoke is easy—there are so many things to do!</strong></p>
+            <p>Roanoke College students don&apos;t have to travel the world to access world-class adventures or meaningful connections. Our region is ecologically unique and rich with outdoor activities that are second to none. The Roanoke Valley community is diverse and welcoming.</p>
 
-            <p>We offer a world-class fitness center and an Outdoor Adventures program to help you stay active. Plus, there are 23 NCAA Division III teams at Roanoke and <strong>the Blue Ridge Mountains are our backyard.</strong></p>
-
-            <p>There are also more than 140 clubs and organizations in everything from anime to bass fishing to college entrepreneurs. Whatever you&apos;re passionate about, there&apos;s a community here for you!</p>
+            <p>Plus, you won&apos;t find a view that compares to this. Situated along the scenic Blue Ridge Mountains, Roanoke College is <strong>just 10 miles from the Blue Ridge Parkway and the Appalachian Trail,</strong> and we were ranked among the <strong>Top 20 Most Beautiful Campuses</strong> in 2012.</p>
           </Container>
           </Container>
       </Container>
