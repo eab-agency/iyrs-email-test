@@ -45,7 +45,7 @@ export default function Home() {
         imageUrl={heroImage}
         className="bg-primary-red py-fluid-2xl"
       >
-        <h1 className="font-normal text-fluid-3xl uppercase">Thank You for Choosing <span className="text-primary-yellow">Roanoke College!</span></h1>
+        <h1 className="font-normal text-fluid-3xl uppercase">Thank you for your interest in <span className="text-primary-yellow">Roanoke College!</span></h1>
         </Hero>
 
       <Container htmlTag="section" className="intro"
