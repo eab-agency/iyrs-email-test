@@ -53,7 +53,7 @@ export default function Home() {
         <Container width="wide" className="mx-auto flex flex-col items-center gap-fluid-xl mq-900:flex-row wrapper">
           <div className="w-narrow mx-auto text-center mq-900:w-3/5">
             
-            <p className="text-fluid-lg"><strong>Thank you for connecting with Roanoke College!</strong> We&apos;re excited to help you discover your path to success. Whether it's our innovative programs, supportive community, or exciting opportunities, we're here to guide you every step of the way. Your journey starts now—let&apos;s make it unforgettable!</p>
+            <p className="text-fluid-lg"><strong>Thank you for connecting with Roanoke College!</strong> We&apos;re excited to help you discover your path to success. Whether it&apos;s our innovative programs, supportive community, or exciting opportunities, we&apos;re here to guide you every step of the way. Your journey starts now—let&apos;s make it unforgettable!</p>
             
             <p className="text-fluid-lg">At Roanoke, we believe in unlocking your full potential while providing a vibrant campus life and world-class education. Together, we&apos;ll prepare you for an inspiring future filled with growth, purpose, and success. Welcome to a place where your story truly begins!</p>
 
