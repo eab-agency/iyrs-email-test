@@ -16,10 +16,10 @@ import { FormModal } from "@/common/components/FormModal";
 import data from "@/data/globalData.json";
 
 import heroImage from "@/assets/roanoke-hero.jpg";
-import AbbyMccusker from "@/assets/abby-mccusker.jpg";
+import CassieWilson from "@/assets/casey-wilson.jpg";
 import AcademicsImage from "@/assets/academics.jpg";
-import StudentLifeImage from "@/assets/student-life.jpg";
 import VideoThumbnail from "@/assets/roanoke-video-thumbnail.jpg";
+import roanokeCampusImage from "@/assets/roanoke-campus.jpg";
 
 import Image from "next/image";
 
@@ -81,16 +81,16 @@ export default function Home() {
           <BlockQuote
             quote="Roanoke College overall is always able to prepare you for anything. I&apos;m very confident that I have a really good background going into grad school."
             author="Casey Wilson"
-            image={AbbyMccusker}
-            imageAlt="Abby McCusker Portrait"
+            image={CassieWilson}
+            imageAlt="Cassie Wilson Portrait"
             gradYear={21}
             authorTitle="B.A. in Political Science"
           />
         </Container>
 
         <Container htmlTag="section" className="bg-primary-red text-white scholarships">
-          <Container width="narrow" className="mx-auto">
-          <h2 className="text-3xl text-primary-yellow uppercase font-normal text-center scholarchips-wrapper">Through scholarships and grants, we are committed to helping you make your bachelor&apos;s degree a reality at Roanoke.</h2>
+          <Container width="narrow" className="mx-auto scholarchips-wrapper">
+          <h2 className="text-3xl text-primary-yellow uppercase font-normal text-center ">Through scholarships and grants, we are committed to helping you make your bachelor&apos;s degree a reality at Roanoke.</h2>
           <p className="text-center">Our Financial Aid Office can help you tap into opportunities such as:</p>
           <ul>
             <li><strong>The Virginia Tuition Assistance Grant Program</strong> for Virginia residents who attend accredited private, nonprofit colleges in Virginia.</li>
@@ -111,7 +111,7 @@ export default function Home() {
 
       <Container htmlTag="section" justifyContent="justify-around" className="mx-auto bg-white edu-info">
         <Container width="wide" className="mx-auto wrapper">
-          <Container className="edu-info__content">
+          <Container className="edu-info__content mq-900:w-1/2">
             <h3>Get Real-World Professional Experience</h3>
             <figure>
               <Image 
@@ -125,11 +125,11 @@ export default function Home() {
 
             <p>At Roanoke, real-world learning experiences are guaranteed, including internships, research, or study abroad options at <strong>more than 300 schools on six continents.</strong></p>
           </Container>
-          <Container className="edu-info__content">
+          <Container className="edu-info__content mq-900:w-1/2">
             <h3>Study In the Beautiful Roanoke Valley</h3>
             <figure>
               <Image 
-                src={StudentLifeImage} 
+                src={roanokeCampusImage} 
                 alt="Student Life"
                 width="600"
                 height="250"
@@ -143,9 +143,11 @@ export default function Home() {
       </Container>
 
       <Container htmlTag="section" className="bg-primary-red text-white dates">
+      <Container width="wide" className="wrapper mx-auto">
         <h2>Important upcoming dates and deadlines</h2>
         <p>Winter Priority Deadline: <strong>January 15</strong></p>
         <p>Regular Decision (Fall 2025): <strong>March 15</strong></p>
+        </Container>
       </Container>
 
       <Container htmlTag="section" className="bg-white lets-go">

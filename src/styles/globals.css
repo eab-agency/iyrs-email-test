@@ -206,6 +206,8 @@ main{
 
 .scholarships{
   position: relative;
+  overflow: hidden;
+  
   strong{
     @apply text-primary-yellow;
   }
@@ -368,6 +370,7 @@ main{
 
 .dates{
   @apply text-center py-fluid-4xl relative;
+  overflow: hidden;
 
   &::before{
     content: '';
@@ -383,6 +386,11 @@ main{
     background-blend-mode: darken;
     z-index: 0;
     opacity: 0.08;
+  }
+
+  .wrapper{
+    position: relative;
+    z-index: 1;
   }
 
   h2{
