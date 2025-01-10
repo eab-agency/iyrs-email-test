@@ -67,8 +67,8 @@ export default function Home() {
      
       <Container htmlTag="section" justifyContent="justify-around" className="mx-auto bg-white edu-info">
         <Container width="wide" className="mx-auto wrapper">
-          <Container className="edu-info__content mq-900:w-1/2">
-            <h3>Break Into the Film Industry with Hands-On Experience</h3>
+        <Container className="edu-info__content mq-900:w-1/2">
+            <h3>Academics</h3>
             <figure>
               <Image 
                 src={AcademicsImage} 
@@ -77,9 +77,9 @@ export default function Home() {
                 height="250"
               />
             </figure>
-            <p>Our screen studies graduates have gone on to find success across  media formats, such as working a popular TV show or starring in a movie alongside Zac Efron. The secret to these students&apos; success isn&apos;t much a secret at all—at Roanoke College, <strong>hands-on learning is guaranteed.</strong></p>
+            <p>Explore your interests with more than 100 areas of study <strong>including business, computer science, public policy, neuroscience, and screen studies.</strong> Our liberal arts focus means you&apos;ll be able to discover your path to success, even if you&apos;re undecided on your major right now.</p>
 
-            <p>Screen studies majors will learn from experienced professors who understand the film industry, and they will gain access to a range of opportunities to write, act, direct, edit, and produce in collaborative, real-world settings. These experiences will lay the foundation for a promising career no matter where their creative endeavors lead.</p>
+            <p>Internships, research, creative projects, service learning, and study abroad will <strong>help you build your personal resume with real-world experience</strong> that sets you apart.</p>
           </Container>
           <Container className="edu-info__content mq-900:w-1/2">
             <h3>Study In the Beautiful Roanoke Valley</h3>
@@ -100,7 +100,6 @@ export default function Home() {
 
       <Container htmlTag="section" className="bg-primary-red text-white dates">
         <h2>Important upcoming dates and deadlines</h2>
-        <p>Winter Priority Deadline: <strong>January 15</strong></p>
         <p>Regular Decision (Fall 2025): <strong>March 15</strong></p>
       </Container>      
     
