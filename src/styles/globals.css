@@ -98,6 +98,13 @@ main{
 .btn{
   @apply text-primary-red bg-secondary-beige font-sans2 text-fluid-lg;
   border-radius: 0;
+
+  &:hover{
+    @apply bg-primary-red text-white;
+    strong{
+      @apply text-white;
+    }
+  }
 }
 
 .intro{
