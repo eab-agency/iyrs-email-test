@@ -1,10 +1,7 @@
-import Link from "next/link";
 import { 
-  Button, 
   Container, 
   StatCard, 
   BlockQuote, 
-  ImageCard, 
   ModalButton,
   StickyCta,
   PageHeader,
@@ -65,9 +62,9 @@ export default function Home() {
           <div className="w-full mq-900:w-3/5">
             <h2 className="text-fluid-lg font-normal">Make an Impact with a Disability Studies DegreeMake an Impact with a Disability Studies Degree</h2>
 
-            <p>At Roanoke College, disability studies isn't just a program — it&apos;s a call to action. By pushing beyond the surface level, we work to fundamentally change how we understand and engage with the full range of human experiences.</p>
+            <p>At Roanoke College, disability studies isn&apos;t just a program — it&apos;s a call to action. By pushing beyond the surface level, we work to fundamentally change how we understand and engage with the full range of human experiences.</p>
             
-            <p>At a time when the number of people with a significant disability is on the rise, you'll take courses that expand your understanding of the diverse social, cultural and political issues around disabilities. You'll also be equipped to form action plans and solutions that help improve the lives of people with disabilities, creating direct change for a too-often underserved population.</p>
+            <p>At a time when the number of people with a significant disability is on the rise, you&apos;ll take courses that expand your understanding of the diverse social, cultural and political issues around disabilities. You&apos;ll also be equipped to form action plans and solutions that help improve the lives of people with disabilities, creating direct change for a too-often underserved population.</p>
 
             <p>Our model includes real-world learning shaped by the diverse experiences and perspectives of people with disabilities. The skills you learn will apply to careers in social services, education, health care and beyond, preparing you to be an advocate for a more inclusive society.</p>
             
@@ -127,7 +124,7 @@ export default function Home() {
             <p>The disability studies curriculum is dedicated to helping students actively engage with people with disabilities throughout the program, fostering a deeper understanding of their diverse experiences and perspectives.
             </p>
 
-            <p>Through our immersive May Term course or service learning opportunities with innovative programs like MAPLE'S Kids and Toy Like Me at Roanoke College, you'll get valuable real-world experience that empowers you to advocate for positive change in inclusive and accessible ways.</p>
+            <p>Through our immersive May Term course or service learning opportunities with innovative programs like MAPLE&apos;S Kids and Toy Like Me at Roanoke College, you&apos;ll get valuable real-world experience that empowers you to advocate for positive change in inclusive and accessible ways.</p>
           </Container>
           <Container className="edu-info__content">
             <h3>Study in the Beautiful Roanoke Valley</h3>
