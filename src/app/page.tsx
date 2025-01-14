@@ -2,16 +2,15 @@ import {
   Container, 
   StatCard, 
   BlockQuote, 
-  ModalButton,
   StickyCta,
   PageHeader,
   PageFooter,
   Hero,
 } from "skeletix";
-import VideoModal from "@/common/components/VideoModal";
 import HelpModal from '@/common/components/HelpModal';
 import PrivacyModal from "@/common/components/PrivacyModal";
 import { FormModal } from "@/common/components/FormModal";
+import LetsGoSection from "@/common/sections/LetsGoSection";
 
 import data from "@/data/globalData.json";
 
@@ -19,7 +18,6 @@ import heroImage from "@/assets/roanoke-hero.jpg";
 import AbbyMccusker from "@/assets/abby-mccusker.jpg";
 import AcademicsImage from "@/assets/academics.jpg";
 import StudentLifeImage from "@/assets/student-life.jpg";
-import VideoThumbnail from "@/assets/roanoke-video-thumbnail.jpg";
 
 import Image from "next/image";
 
@@ -151,25 +149,7 @@ export default function Home() {
         </Container>
       </Container>
 
-      <Container htmlTag="section" className="bg-white lets-go">
-        <Container width="wide" className="mx-auto wrapper w-full">
-          <div className="flex-col lets-go-content">
-            <p>Roanoke is a nationally ranked, liberal arts college.</p>
-            <p>Check out one of <strong>the best colleges in Virginia!</strong></p>
-          </div>
-          <ModalButton content={<VideoModal videoUrl="https://www.youtube.com/embed/QNKU2CZeDJQ?si=lLqWcwyzzBCg0nrJ" />} className="lets-go-video">
-            <figure className="video-thumbnail">
-              <Image  
-                src={VideoThumbnail}
-                alt="Play Video"
-                fill
-                sizes="(min-width: 1024px) 100vw, 50vw"
-                />
-            </figure>
-          </ModalButton>
-        </Container>
-      </Container>
-
+      <LetsGoSection />
       
       <StickyCta formId='lead-form'>
           Take the First Step! Connect with <strong>Roanoke College</strong>

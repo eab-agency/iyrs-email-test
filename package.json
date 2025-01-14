@@ -21,7 +21,7 @@
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "sass": "^1.83.1",
-    "skeletix": "^0.1.4",
+    "skeletix": "^0.1.7",
     "zod": "^3.24.1"
   },
   "devDependencies": {

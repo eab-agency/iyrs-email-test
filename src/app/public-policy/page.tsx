@@ -2,24 +2,22 @@ import {
   Container, 
   StatCard, 
   BlockQuote, 
-  ModalButton,
   StickyCta,
   PageHeader,
   PageFooter,
   Hero,
 } from "skeletix";
-import VideoModal from "@/common/components/VideoModal";
 import HelpModal from '@/common/components/HelpModal';
 import PrivacyModal from "@/common/components/PrivacyModal";
 import { FormModal } from "@/common/components/FormModal";
+import LetsGoSection from "@/common/sections/LetsGoSection";
 
 import data from "@/data/globalData.json";
 
 import heroImage from "@/assets/roanoke-hero.jpg";
 import CassieWilson from "@/assets/casey-wilson.jpg";
 import AcademicsImage from "@/assets/academics.jpg";
-import VideoThumbnail from "@/assets/roanoke-video-thumbnail.jpg";
-import roanokeCampusImage from "@/assets/roanoke-campus.jpg";
+import roanokeCampusImage from "@/assets/roanoke-mountains.jpg";
 
 import Image from "next/image";
 
@@ -83,7 +81,6 @@ export default function Home() {
             author="Casey Wilson"
             image={CassieWilson}
             imageAlt="Cassie Wilson Portrait"
-            gradYear={21}
             authorTitle="B.A. in Political Science"
           />
         </Container>
@@ -103,16 +100,16 @@ export default function Home() {
       <Container htmlTag="section" width="full" className="bg-secondary-beige stats">
         <h2 className="title"><span>REASONS TO CHOOSE ROANOKE</span></h2>
         <Container width="wide" className="mx-auto w-full gap-4 z-10 stats-list">
-          <StatCard statData={{line2:'TOP 7%'}} statDescriptor="of colleges with academic credentials to offer a Phi Beta Kappa honor society chapter"  />
+          <StatCard statData={{line1:'TOP', line2:'7%'}} statDescriptor="of colleges with academic credentials to offer a Phi Beta Kappa honor society chapter"  />
           <StatCard statData={{line2:'95%'}} statDescriptor="of faculty hold the highest degree possible in their field" />
-          <StatCard statData={{line2:'Top 9%'}} statDescriptor="The Princeton Review&apos;s Best Colleges"  />
+          <StatCard statData={{line1:'TOP', line2:'9%'}} statDescriptor="The Princeton Review&apos;s Best Colleges"  />
         </Container>
       </Container>
 
       <Container htmlTag="section" justifyContent="justify-around" className="mx-auto bg-white edu-info">
         <Container width="wide" className="mx-auto wrapper">
           <Container className="edu-info__content mq-900:w-1/2">
-            <h3>Get Real-World Professional Experience</h3>
+            <h3>Get Real-World Experience</h3>
             <figure>
               <Image 
                 src={AcademicsImage} 
@@ -121,7 +118,7 @@ export default function Home() {
                 height="250"
               />
             </figure>
-            <p>As a public policy student, you can take advantage of Roanoke&apos;s Washington Semester program for a distinctive, hands-on learning opportunity. The program offers students a life-changing opportunity to live and work in the Washington D.C. Students get invaluable experience interning for Capitol Hill, national museums, think tanks, and nonprofits. Or partner with local government and organizations during your coursework—there are plenty of opportunities for professional learning and skill-building.</p>
+            <p>As a public policy student, you can take advantage of Roanoke&apos;s Washington Semester program for a distinctive, hands-on learning opportunity. The program offers students a life-changing opportunity to live and work in Washington D.C. Students get invaluable experience interning for Capitol Hill, national museums, think tanks, and nonprofits. Or partner with local government and organizations during your coursework—there are plenty of opportunities for professional learning and skill-building.</p>
 
             <p>At Roanoke, real-world learning experiences are guaranteed, including internships, research, or study abroad options at <strong>more than 300 schools on six continents.</strong></p>
           </Container>
@@ -135,9 +132,9 @@ export default function Home() {
                 height="250"
               />
             </figure>
-            <p>Roanoke College students don&apos;t have to travel the world to access world-class adventures or meaningful connections. Our region is ecologically unique and rich with outdoor activities that are second to none. The Roanoke Valley community is diverse and welcoming.</p>
+            <p>Roanoke College students don&apos;t have to travel the world to access world-class adventures or meaningful connections. Our region is ecologically unique and rich with outdoor activities that are second to none. The Roanoke Valley community is diverse and welcoming. </p>
 
-            <p>Plus, you won&apos;t find a view that compares to this. Situated along the scenic Blue Ridge Mountains, Roanoke College is <strong>just 10 miles from the Blue Ridge Parkway and the Appalachian Trail,</strong> and we were ranked among the <strong>Top 20 Most Beautiful Campuses</strong> in 2012.</p>
+            <p>Plus, you won&apos;t find a view that compares to this. Situated along the scenic Blue Ridge Mountains, Roanoke College is <strong>just 10 miles from the Blue Ridge Parkway and the Appalachian Trail,</strong> and our area has been recognized as one of the Best Mountain Towns in the United States.</p>
           </Container>
           </Container>
       </Container>
@@ -149,24 +146,7 @@ export default function Home() {
         </Container>
       </Container>
 
-      <Container htmlTag="section" className="bg-white lets-go">
-        <Container width="wide" className="mx-auto wrapper w-full">
-          <div className="flex-col lets-go-content">
-            <p>Roanoke is a nationally ranked, liberal arts college.</p>
-            <p>Check out one of <strong>the best colleges in Virginia!</strong></p>
-          </div>
-          <ModalButton content={<VideoModal videoUrl="https://www.youtube.com/embed/QNKU2CZeDJQ?si=lLqWcwyzzBCg0nrJ" />} className="lets-go-video">
-            <figure className="video-thumbnail">
-              <Image  
-                src={VideoThumbnail}
-                alt="Play Video"
-                fill
-                sizes="(min-width: 1024px) 100vw, 50vw"
-                />
-            </figure>
-          </ModalButton>
-        </Container>
-      </Container>
+      <LetsGoSection />
 
       
       <StickyCta formId='lead-form'>
