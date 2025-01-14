@@ -573,3 +573,9 @@ main{
   display: none;
   visibility: hidden;
 }
+
+.modal{
+  h2{
+    @apply text-fluid-xl;
+  }
+}
