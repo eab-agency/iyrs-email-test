@@ -148,19 +148,24 @@ main{
 }
 
 .blockquote{
-  @apply bg-transparent p-0 flex flex-row gap-fluid-xl;
+  @apply bg-transparent p-0 flex flex-col mq-900:flex-row mq-900:gap-fluid-xl;
 
   /* figure{
     @apply w-1/3 h-[15rem] flex-1;
   } */
 
   figure{
-    height: auto;
-    width: 40%;
+    width: 100%;
+    height: clamp(15rem, 30vw, 20rem);
     flex-shrink: 0;
+    
+    @media(min-width: 900px){
+      width: 40%;
+      height: auto;
+    }
 
     img{
-      object-position: 30%;
+      /* object-position: 30%; */
     }
 
   @media(min-width: 1080px){
@@ -179,7 +184,7 @@ main{
   }
 
   .blockquote__content{
-    @apply py-fluid-4xl p-fluid-2xl;
+    @apply py-fluid-xl p-fluid-2xl mq-900:py-fluid-4xl;
     /* max-width: 40rem; */
     
 
@@ -269,7 +274,7 @@ main{
   }
 
   .stats-list{
-    @apply  flex flex-col mq-900:flex-row;
+    @apply  flex flex-col mq-900:flex-row gap-0 mq-900:gap-fluid-lg;
   }
 
   .title{
@@ -335,7 +340,7 @@ main{
     }
     button{
       background: none !important;
-      @apply uppercase text-fluid-lg font-sans1 flex flex-col mq-900:flex-row;
+      @apply uppercase text-fluid-lg font-sans1 flex hover:text-black;
 
 
       strong{
@@ -344,8 +349,12 @@ main{
 
       &:hover{
         strong{
-          @apply bg-primary-yellow text-primary-red;
+          @apply bg-primary-yellow text-primary-red ;
         }
+      }
+
+      .btn__text{
+        @apply flex flex-col items-center mq-900:gap-fluid-md mq-900:flex-row;
       }
     }
   }
@@ -429,7 +438,7 @@ main{
     }
 
     .lets-go-content{
-      @apply px-fluid-xl py-fluid-3xl mq-900:w-1/2;
+      @apply p-fluid-xl mq-900:py-fluid-3xl mq-900:w-1/2;
     }
 
     .lets-go-video{
@@ -460,7 +469,9 @@ main{
 
       .video-thumbnail{
         overflow: hidden;
-        height: clamp(30rem, 50vw, 40rem);
+        position: relative;
+        height: clamp(20rem, 30vw, 30rem);
+        width: 100vw;
 
         @media(min-width: 900px){
         width: 100%;
@@ -554,4 +565,11 @@ main{
   .mauticform-button-wrapper{
     margin-top: 1em;
   }
+
+
+}
+
+.FormHide{
+  display: none;
+  visibility: hidden;
 }

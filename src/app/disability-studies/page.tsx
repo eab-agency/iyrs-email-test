@@ -1,24 +1,23 @@
 import { 
   Container, 
   StatCard, 
-  BlockQuote, 
-  ModalButton,
+  BlockQuote,
   StickyCta,
   PageHeader,
   PageFooter,
   Hero,
 } from "skeletix";
-import VideoModal from "@/common/components/VideoModal";
 import HelpModal from '@/common/components/HelpModal';
 import PrivacyModal from "@/common/components/PrivacyModal";
 import { FormModal } from "@/common/components/FormModal";
+import LetsGoSection from "@/common/sections/LetsGoSection";
 
 import data from "@/data/globalData.json";
 
 import heroImage from "@/assets/roanoke-hero.jpg";
-import VideoThumbnail from "@/assets/roanoke-video-thumbnail.jpg";
-import disabilityStudiesImage from "@/assets/disability-studies.jpg";
-import roanokeCampusImage from "@/assets/roanoke-campus.jpg";
+import disabilityStudiesImage from "@/assets/toy-like-me.jpg";
+import roanokeCampusImage from "@/assets/roanoke-mountains.jpg";
+import hopeKeller from "@/assets/hope-keller.jpg";
 
 import Image from "next/image";
 
@@ -80,11 +79,9 @@ export default function Home() {
           <BlockQuote
             quote="It's been incredible to work with the professors in the disability studies concentration. They&apos;ve given me so many new perspectives about life and advocating for people with disabilities. They&apos;ve also given me a lot of opportunities for field experience."
             author="Hope Keller"
-            // image={AbbyMccusker}
-            // imageAlt="Abby McCusker Portrait"
-            // gradYear={21}
             authorTitle="health and exercise science major with a concentration in disability studies, president of the Toy Like Me student club"
-            className="max-w-narrow mx-auto"
+            image={hopeKeller}
+            imageAlt="Hope Keller"
           />
         </Container>
 
@@ -138,7 +135,7 @@ export default function Home() {
             </figure>
             <p>Roanoke College students don&apos;t have to travel the world to access world-class adventures or meaningful connections. Our region is ecologically unique and rich with outdoor activities that are second to none. The Roanoke Valley community is diverse and welcoming. </p>
 
-            <p>Plus, you won&apos;t find a view that compares to this. Situated along the scenic Blue Ridge Mountains, Roanoke College is <strong>just 10 miles from the Blue Ridge Parkway and the Appalachian Trail,</strong> and we were ranked among the <strong>Top 20 Most Beautiful Campuses</strong> in 2012, and our area has been recognized as one of the Best Mountain Towns in the United States.</p>
+            <p>Plus, you won&apos;t find a view that compares to this. Situated along the scenic Blue Ridge Mountains, Roanoke College is <strong>just 10 miles from the Blue Ridge Parkway and the Appalachian Trail,</strong> and our area has been recognized as one of the Best Mountain Towns in the United States.</p>
           </Container>
           </Container>
       </Container>
@@ -150,24 +147,7 @@ export default function Home() {
       </Container>
       </Container>
 
-      <Container htmlTag="section" className="bg-white lets-go">
-        <Container width="wide" className="mx-auto wrapper w-full">
-          <div className="flex-col lets-go-content">
-            <p>Roanoke is a nationally ranked, liberal arts college.</p>
-            <p>Check out one of <strong>the best colleges in Virginia!</strong></p>
-          </div>
-          <ModalButton content={<VideoModal videoUrl="https://www.youtube.com/embed/QNKU2CZeDJQ?si=lLqWcwyzzBCg0nrJ" />} className="lets-go-video">
-            <figure className="video-thumbnail">
-              <Image  
-                src={VideoThumbnail}
-                alt="Play Video"
-                fill
-                sizes="(min-width: 1024px) 100vw, 50vw"
-                />
-            </figure>
-          </ModalButton>
-        </Container>
-      </Container>
+      <LetsGoSection />
 
       
       <StickyCta formId='lead-form'>

@@ -69,7 +69,7 @@ export default function Home() {
       <Container htmlTag="section" justifyContent="justify-around" className="mx-auto bg-white edu-info">
         <Container width="wide" className="mx-auto wrapper">
         <Container className="edu-info__content mq-900:w-1/2">
-            <h3>Academics</h3>
+            <h3>A World of Opportunities Awaits You</h3>
             <figure>
               <Image 
                 src={AcademicsImage} 
@@ -92,9 +92,9 @@ export default function Home() {
                 height="250"
               />
             </figure>
-            <p>Roanoke College students don&apos;t have to travel the world to access world-class adventures or meaningful connections. Our region is ecologically unique and rich with outdoor activities that are second to none. The Roanoke Valley community is diverse and welcoming.</p>
+            <p>Roanoke College students don&apos;t have to travel the world to access world-class adventures or meaningful connections. Our region is ecologically unique and rich with outdoor activities that are second to none. The Roanoke Valley community is diverse and welcoming. </p>
 
-            <p>Plus, you won&apos;t find a view that compares to this. Situated along the scenic Blue Ridge Mountains, Roanoke College is <strong>just 10 miles from the Blue Ridge Parkway and the Appalachian Trail,</strong> and we were ranked among the <strong>Top 20 Most Beautiful Campuses</strong> in 2012.</p>
+            <p>Plus, you won&apos;t find a view that compares to this. Situated along the scenic Blue Ridge Mountains, Roanoke College is <strong>just 10 miles from the Blue Ridge Parkway and the Appalachian Trail,</strong> and our area has been recognized as one of the Best Mountain Towns in the United States.</p>
           </Container>
           </Container>
       </Container>
