@@ -12,7 +12,7 @@ import data from "@/data/globalData.json";
 
 import heroImage from "@/assets/roanoke-hero.jpg";
 import AcademicsImage from "@/assets/academics.jpg";
-import StudentLifeImage from "@/assets/student-life.jpg";
+import roanokeCampusImage from "@/assets/roanoke-mountains.jpg";
 
 import Image from "next/image";
 
@@ -69,7 +69,7 @@ export default function Home() {
       <Container htmlTag="section" justifyContent="justify-around" className="mx-auto bg-white edu-info">
         <Container width="wide" className="mx-auto wrapper">
         <Container className="edu-info__content mq-900:w-1/2">
-            <h3>A World of Opportunities Awaits You</h3>
+            <h3>A World of Opportunities</h3>
             <figure>
               <Image 
                 src={AcademicsImage} 
@@ -86,7 +86,7 @@ export default function Home() {
             <h3>Study In the Beautiful Roanoke Valley</h3>
             <figure>
               <Image 
-                src={StudentLifeImage} 
+                src={roanokeCampusImage} 
                 alt="Student Life"
                 width="600"
                 height="250"
