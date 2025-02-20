@@ -14,7 +14,9 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
+    "@netlify/emails": "^1.1.0",
     "@next/third-parties": "^15.1.4",
+    "@sendgrid/mail": "^8.1.4",
     "@t3-oss/env-nextjs": "^0.11.1",
     "barestyles": "^0.1.6",
     "next": "^15.1.4",
