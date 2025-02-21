@@ -1,6 +1,5 @@
 "use client";
 import React, { useEffect } from "react";
-import { sendEmail } from "@netlify/emails";
 
 export const FormModal = () => {
   const handleSubmit = async (
@@ -16,17 +15,6 @@ export const FormModal = () => {
       const phone = formData.get("phone") as string;
       const gradYear = formData.get("gradYear") as string;
 
-      await sendEmail({
-        from: "iyrs@reversetype.dev",
-        to: email,
-        subject: "Thank you for your submission",
-        template: "auto",
-        parameters: {
-          name: `${firstname} ${lastname}`,
-          phone: phone,
-          gradYear: gradYear,
-        },
-      });
       console.log("Email sent successfully!");
       // Perform any additional actions after successful email sending
     } catch (error) {

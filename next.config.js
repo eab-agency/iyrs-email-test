@@ -5,25 +5,6 @@
 import "./src/env.js";
 
 /** @type {import("next").NextConfig} */
-const config = {
-webpack: (config, { isServer }) => {
-    if (!isServer) {
-    // Client-side specific configuration
-    config.resolve.fallback = {
-        ...config.resolve.fallback,
-        fs: false,
-        net: false,
-        tls: false,
-        crypto: false,
-        http: false,
-        https: false,
-        buffer: require.resolve('buffer/'),
-        stream: require.resolve('stream-browserify'),
-    };
-    }
-    return config;
-},
-transpilePackages: ['@netlify/emails'],
-};
+const config = {};
 
 export default config;
