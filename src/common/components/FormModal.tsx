@@ -1,5 +1,14 @@
 "use client";
-import React, { useEffect } from "react";
+import React from "react";
+
+export interface PersonProps {
+  firstName: string;
+  lastName: string;
+  email: string;
+  phone: string;
+  gradYear: string;
+  permission: boolean;
+}
 
 export const FormModal = () => {
   const handleSubmit = async (
@@ -15,7 +24,26 @@ export const FormModal = () => {
       const phone = formData.get("phone") as string;
       const gradYear = formData.get("gradYear") as string;
 
+      const person: PersonProps = {
+        firstName: firstname,
+        lastName: lastname,
+        email,
+        phone,
+        gradYear,
+        permission: formData.get("permission") === "on",
+      };
+
+      // Send email to user
+      await fetch("/api/send-email", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(person),
+      });
+
       console.log("Email sent successfully!");
+
       // Perform any additional actions after successful email sending
     } catch (error) {
       console.error("Error sending email:", error);
@@ -24,7 +52,10 @@ export const FormModal = () => {
   };
   return (
     <div id="modal" className="modal">
-      <form className="rounded-lg shadow-xl flex flex-col px-8 py-8">
+      <form
+        className="rounded-lg shadow-xl flex flex-col px-8 py-8"
+        onSubmit={handleSubmit}
+      >
         {/* label and input for first name */}
         <label
           htmlFor="firstname"
@@ -109,7 +140,10 @@ export const FormModal = () => {
         </div>
 
         <div className="flex flex-row items-center justify-start">
-          <button className="px-10 mt-8 py-2 bg-[#130F49] text-gray-50 font-light rounded-md text-lg flex flex-row items-center">
+          <button
+            className="px-10 mt-8 py-2 bg-[#130F49] text-gray-50 font-light rounded-md text-lg flex flex-row items-center"
+            type="submit"
+          >
             Send
             <svg
               width="24"

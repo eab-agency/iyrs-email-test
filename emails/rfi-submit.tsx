@@ -9,22 +9,14 @@ import {
   Preview,
   Text,
   Section,
-  Row,
-  Column,
   Hr,
 } from "@react-email/components";
 import * as React from "react";
 import data from "@/data/globalData.json";
+import type { PersonProps } from "@/common/components/FormModal";
 
 interface NotificationEmailProps {
-  person?: {
-    firstName: string;
-    lastName: string;
-    email: string;
-    phone: string;
-    gradYear: string;
-    permission: boolean;
-  };
+  person?: PersonProps;
 }
 
 const baseUrl = process.env.DEPLOY_URL
