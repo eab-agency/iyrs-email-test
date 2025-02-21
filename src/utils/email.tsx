@@ -1,3 +1,4 @@
+/* eslint-disable */
 import { render } from "@react-email/components";
 import sendgrid from "@sendgrid/mail";
 import Email from "../../emails/rfi-submit";

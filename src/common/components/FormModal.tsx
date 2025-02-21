@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 
 export interface PersonProps {
   firstName: string;
@@ -11,10 +11,17 @@ export interface PersonProps {
 }
 
 export const FormModal = () => {
+  // Added state for success and error messages
+  const [successMessage, setSuccessMessage] = useState("");
+  const [errorMessage, setErrorMessage] = useState("");
+
   const handleSubmit = async (
     event: React.FormEvent<HTMLFormElement>
   ): Promise<void> => {
     event.preventDefault();
+    // Reset messages on new submission
+    setSuccessMessage("");
+    setErrorMessage("");
 
     try {
       const formData = new FormData(event.currentTarget);
@@ -43,10 +50,12 @@ export const FormModal = () => {
       });
 
       console.log("Email sent successfully!");
+      setSuccessMessage("Email sent successfully!");
 
       // Perform any additional actions after successful email sending
     } catch (error) {
       console.error("Error sending email:", error);
+      setErrorMessage("Error sending email. Please try again.");
       // Handle error case
     }
   };
@@ -161,6 +170,11 @@ export const FormModal = () => {
           </button>
         </div>
       </form>
+      {/* Display success or error message */}
+      {successMessage && (
+        <p className="text-green-500 mt-4">{successMessage}</p>
+      )}
+      {errorMessage && <p className="text-red-500 mt-4">{errorMessage}</p>}
     </div>
   );
 };
