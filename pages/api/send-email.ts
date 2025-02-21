@@ -12,7 +12,8 @@ export default async function handler(
   }
 
   try {
-    const person = req.body as PersonProps; // cast req.body to PersonProps
+    const person = req.body as PersonProps; // safely cast request body to PersonProps
+    console.log("🚀 ~ person:", person);
     // Call our sendEmail function
     await sendEmail(person);
     return res.status(200).json({ message: "Email sent successfully" });

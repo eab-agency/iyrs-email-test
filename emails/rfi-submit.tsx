@@ -109,7 +109,7 @@ export const RfiSubmitNotification = ({ person }: NotificationEmailProps) => (
           src={`${baseUrl}/static/logo.svg`}
           width="32"
           height="32"
-          alt="Notion's Logo"
+          alt={`${data.partner.acronym}'s Logo`}
         />
         <Text style={footer}>
           <Link href="" target="_blank" style={{ ...link, color: "#898989" }}>
