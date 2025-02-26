@@ -22,9 +22,9 @@ export async function sendEmail(person: PersonProps) {
   const emailHtml = await render(<Email person={person} />);
 
   const options = {
-    from: "iyrs@reversetype.dev",
+    from: "IYRS Office of Admissions <iyrs@reversetype.dev>",
     to: person.email,
-    subject: "Thanks for submitting your information",
+    subject: "Take control of your future at IYRS",
     html: emailHtml,
   };
 
