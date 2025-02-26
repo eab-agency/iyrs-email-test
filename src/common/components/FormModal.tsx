@@ -126,8 +126,8 @@ export const FormModal = () => {
             htmlFor="permission"
             className="text-white font-light flex items-center"
           >
-            I give permission to Roanoke College to send me important updates
-            via text messaging. (Standard message charges apply.)
+            I give permission to IRYS to send me important updates via text
+            messaging. (Standard message charges apply.)
           </label>
         </div>
 

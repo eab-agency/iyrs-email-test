@@ -5,6 +5,19 @@
 import "./src/env.js";
 
 /** @type {import("next").NextConfig} */
-const config = {};
+const config = {
+  async rewrites() {
+    return [
+      {
+        source: "/api/submit:path*",
+        destination: "https://go.advance.appily.com/form/submit:path*",
+      },
+      {
+        source: "/api/acs/:slug",
+        destination: "https://go.advance.appily.com/api/:slug",
+      },
+    ];
+  },
+};
 
 export default config;
